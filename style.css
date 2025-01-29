@@ -268,9 +268,20 @@ section {
   margin-top: 2rem;
 }
 
+.second-about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+}
+
+.second-about-containers,
+.second-about-details-container {
+  display: flex;
 }
 
 .about-containers,
@@ -313,6 +324,12 @@ section {
 }
 
 .experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.second-experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -427,6 +444,9 @@ footer p {
   .about-containers {
     flex-wrap: wrap;
   }
+  .second-about-containers {
+    flex-wrap: wrap;
+  }
   #contact,
   #projects {
     height: fit-content;
@@ -458,6 +478,9 @@ footer p {
   .about-containers {
     margin-top: 0;
   }
+  .second-about-containers {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -479,6 +502,9 @@ footer p {
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
+    flex-wrap: wrap;
+  }
+  .second-about-containers {
     flex-wrap: wrap;
   }
   .contact-info-container {
